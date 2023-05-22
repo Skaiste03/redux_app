@@ -1,0 +1,13 @@
+STATE:
+- local (state accessible in one or couple related components)
+--- React: useState / useReducer
+- global (state accessible in all application)
+--- React: Context API + useState / useReducer
+--- Redux (third party library) 
+--- Recoil (third party library)
+--- and other third party libraries
+- api (state related to data from api)
+--- React Query (third party library)
+--- React: Context API + useState / useReducer
+--- Redux (third party library)
+--- Recoil (third party library)

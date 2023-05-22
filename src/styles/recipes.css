@@ -1,0 +1,28 @@
+.recipe-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px 60px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px;
+}
+
+.button {
+  padding: 16px 36px;
+  border: none;
+  font-size: 1em;
+  background-color: rgb(8, 8, 32);
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.button-disabled {
+  background-color: rgb(77, 77, 77);
+  opacity: 0.8;
+  cursor: default;
+}
