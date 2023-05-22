@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import './styles/global.css';
+import Loader from './components/Loader';
 
 //Page Routes
 const Recipes = lazy(() => import('./pages/Recipes'));
@@ -11,7 +12,7 @@ function App() {
   return (
     <Router>
       <Layout>
-        <Suspense fallback={<p>loading..</p>}>
+        <Suspense fallback={<Loader />}>
           <Routes>
             <Route path='/' element={<Recipes />} />
             <Route path='/:slug' element={<Recipe />} />
