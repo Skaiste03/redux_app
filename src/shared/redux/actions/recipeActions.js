@@ -15,12 +15,13 @@ export const fetchSingleRecipe = (recipe_id) => {
         accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_KEY,
       });
 
+      // Retrieve recipe entries that match recipe id
       const response = await client.getEntries({
         content_type: 'recipe',
         'fields.slug': recipe_id,
       });
 
-      // Extract the recipe item from the response
+      // Extract the recipe item from the response array
       const recipe = response.items[0];
 
       dispatch({ type: SINGLE_RECIPE_SUCCESS, payload: recipe });

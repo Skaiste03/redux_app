@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Layout = ({ children }) => {
   return (
     <div className='layout'>
       <header>
-        <a href='/'>
-          <h1>Easy, Fast, Tasty Cooking</h1>
+        <Link to='/'>
+          <h1>Easy, Quick, and Delicious Cooking</h1>
           <h2>Spread The Joy</h2>
-        </a>
+        </Link>
       </header>
 
       <div className='page-content'>{children}</div>

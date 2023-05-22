@@ -11,6 +11,7 @@ const SingleRecipe = () => {
   const dispatch = useDispatch();
   const { slug } = useParams();
 
+  // Fetch data finding with slug value
   useEffect(() => {
     dispatch(fetchSingleRecipe(slug));
   }, [dispatch, slug]);
