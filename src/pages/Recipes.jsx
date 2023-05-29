@@ -51,7 +51,7 @@ const Recipes = () => {
           disabled={currentPage === 1}
           className={`button ${currentPage === 1 ? 'button-disabled' : ''}`}
         >
-          Previous Page
+          Previous
         </button>
         <button
           onClick={handleNextPage}
@@ -60,7 +60,7 @@ const Recipes = () => {
             endIndex >= recipes.length ? 'button-disabled' : ''
           }`}
         >
-          Next Page
+          Next
         </button>
       </div>
     </>
